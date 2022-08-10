@@ -27,3 +27,13 @@ img {
     height: 100vh;
     width: 35vw;
 }
+
+form {
+    display: flex;
+    gap: 50px;
+}
+
+.left-form, .right-form {
+    display: flex;
+    flex-direction: column;
+}
