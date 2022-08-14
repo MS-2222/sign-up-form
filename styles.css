@@ -136,3 +136,15 @@ form {
 .left-form {
     margin-left: 30px;
 }
+
+input:invalid:focus {
+    border: solid red 3px;
+}
+
+input:valid:focus {
+    border: solid green 3px;
+}
+
+input:focus {
+    outline: none;
+}

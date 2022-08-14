@@ -23,28 +23,28 @@
                 <p>Sign-Up now to get started!</p>
                 <p>You <em>know</em> you want to.</p>
             </div>
-            <div class="form">
-                <form>
+            <div class="form" action="#">
+                <form id="my-form">
                     <div class="left-form">
                         <label for="firstName">FIRST NAME</label>
-                        <input class="firstName" name="firstName" type="text">
+                        <input class="firstName" name="firstName" type="text" required>
                         <label for="email">EMAIL</label>
-                        <input class="email" name="email" type="email">
+                        <input class="email" name="email" type="email" required>
                         <label for="password">PASSWORD</label>
-                        <input class="password" name="password" type="password">
+                        <input class="password" name="password" type="password" required>
                     </div>
                     <div class="right-form">
                         <label for="lastName">LAST NAME</label>
-                        <input class="lastName" name="lastName" type="text">
+                        <input class="lastName" name="lastName" type="text" required>
                         <label for="phone">PHONE NUMBER</label>
-                        <input class="phone" name="phone" type="text">
+                        <input class="phone" name="phone" type="text" required>
                         <label for="confirmPassword">CONFIRM PASSWORD</label>
-                        <input class="confirmPassword" name="confirmPassword" type="password">
+                        <input class="confirmPassword" name="confirmPassword" type="password" required>
                     </div>
                 </form>
             </div>
             <div class="sign-up">
-                <button class="submit" type="submit">Create Account</button>
+                <button class="submit" type="submit" form="my-form">Create Account</button>
             </div>
         </div>
     </div>
