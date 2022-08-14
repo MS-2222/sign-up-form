@@ -1,10 +1,12 @@
 @font-face {
-    font-family: customFont;
-    src: url(static/Norse-Bold.otf);
+    font-family: customFontLight;
+    src: url(static/Roboto-Light.ttf);
 }
 
-html {
-    font-family: customFont;
+@font-face {
+    font-family: customFontBold;
+    src: url(static/Roboto-Bold.ttf);
+
 }
 
 body {
@@ -44,6 +46,7 @@ body {
     line-height: 2rem;
     padding: 0px 2vw;
     height: 150px;
+    font-family: customFontBold;
 }
 
 .left-side img {
@@ -57,6 +60,7 @@ body {
     z-index: 2;
     top: 95vh;
     left: 30px;
+    font-family: customFontLight;
 }
 
 .right-side {
@@ -69,7 +73,7 @@ body {
     width: 60vw;
     position: relative;
     z-index: 1;
-    
+    font-family: customFontLight;
 
 }
 
@@ -85,15 +89,30 @@ body {
 }
 
 .description {
-    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 24px;
 }
 
 .sign-up {
     padding-top: 30px;
+    height: 30vh;
+
+}
+
+.submit {
+    height: 60px;
+    width: 250px;
+    border-radius: 10px;
+    background-color: rgb(161, 107, 161);
+    color: white;
+    font-size: 24px;
+    font-family: customFontBold;
 }
 
 .form {
-    height: 20vh;
+    height: 30vh;
     width: 60vw;
     background-color: rgb(161, 107, 161);
 }
